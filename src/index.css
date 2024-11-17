@@ -1,0 +1,181 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Edu AU VIC WA NT Pre", serif;
+  background-color: rgb(7, 2, 58);
+}
+.parentDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ChildDivImage{
+  background-image: url(https://images.pexels.com/photos/4968384/pexels-photo-4968384.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.heading{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  padding: 2px;
+  color: #fff;
+}
+.outerDiv{
+  width: 100%;
+  height: auto;
+  background-color: rgba(50, 74, 169, 0.731);
+  margin: 10px;
+  padding: 6px 10px;
+  border-radius: 7px;
+}
+.innerDiv{
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: 20px;
+  background-color: rgb(136, 159, 233);
+  padding: 10px;
+  border-radius: 5px; 
+  /* border: 2px solid black; */
+  backdrop-filter: blur(10px);
+  box-shadow: 7px 8px 10px rgba(0, 0, 0, 0.8);
+}
+.inputHolder{
+  width: 100%;
+  margin-bottom: 10px;
+}
+.input1{
+  background-color: rgba(122, 137, 233, 0.846);
+  padding: 12px;
+  border-radius: 9px;
+  display: flex;
+  justify-content: center;
+}
+.halfInput{
+  width: 50%;
+}
+.label{
+  color: black;
+  font-weight: 500;
+  margin-bottom: 1px;
+  margin-top: 3px;
+  display: inline-block;
+}
+.inputLabel{
+  outline: none;
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  margin-top: 13px;
+  background-color: #d9d8d872;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.407);
+}
+.currency1{
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  text-align: right;  
+}
+.pTag{
+  color: black;
+  width: 100%;
+  padding: 4px;
+  margin-bottom: 2px;
+  font-weight: 600;
+}
+.select{
+  border-radius: 6px;
+  outline: none;
+  padding: 7px;
+  background-color: rgb(184, 187, 238);
+  border: 2px solid #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 9px;
+}
+.buttonSwap{
+  /* display: flex;
+  justify-content: center; */
+  position: absolute;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  /* border: 1px solid rgb(255, 255, 255); */
+  border: transparent;
+  outline: none;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 255, 0.697);
+  color: #fff;
+  padding: 9px 25px;
+  cursor: pointer;
+  transition: all 120ms ease-in-out;
+}
+.buttonSwap:hover{
+  box-shadow: 0 4px 10px rgba(20, 35, 82, 0.95);
+}
+.submitBtn{
+  width: 100%;
+  background-color: rgba(65, 65, 224, 0.874);
+  color: #fff;
+  padding: 13px 20px;
+  border-radius: 10px;
+  outline: none;
+ font-size: 1.1rem;
+ font-weight: 500;
+ border: none;
+ margin-top: 12px;
+ margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .ChildDivImage{
+    background-image: none;
+    width: 0%;
+  }
+  .outerDiv{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:426px){
+  .label{
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width:321px) {
+  .select{
+    margin: 9px;
+    padding: 6px 1px; 
+  }
+  .input1{
+    margin: 0px;
+  }
+  .label{
+    margin-top: 15px;
+  }
+  .inputLabel{
+    margin-top: 1px;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .pTag{
+    padding: 2px;
+  }
+}
